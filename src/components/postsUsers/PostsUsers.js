@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import {getPostOfUser} from "../service/API";
 import PostUser from "../postUser/PostUser";
+import {getPostOfUser} from "../../service/API";
 
 export default function PostsUsers({userId}) {
     const [posts, setPosts] = useState([]);

@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import {getComments} from "../service/API";
 import Info from "../info/Info";
+import {getComments} from "../../service/API";
 
 export default function PostInfo ({item}) {
     const [comments, setComments] = useState([]);
@@ -9,7 +9,7 @@ export default function PostInfo ({item}) {
         getComments(item.id).then(value => {
             setComments(value.data)
         })
-    }, [])
+    }, [item.id])
     return(
         <div>
             {

@@ -1,5 +1,5 @@
-import Users from "./users/Users";
-import PostsUsers from "./postsUsers/PostsUsers";
+import Users from "./components/users/Users";
+import PostsUsers from "./components/postsUsers/PostsUsers";
 
 export default function App() {
 

@@ -1,7 +1,12 @@
-export default function App () {
-    return(
-           <div>
+import Users from "./users/Users";
+import PostsUsers from "./postsUsers/PostsUsers";
 
-           </div>
-          );
+export default function App() {
+
+    return (
+        <div>
+            <Users/>
+            <PostsUsers/>
+        </div>
+    );
 }

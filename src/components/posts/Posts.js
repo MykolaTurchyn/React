@@ -2,7 +2,6 @@ import './PostsStyle.css'
 import {useState} from "react";
 
 export default function Posts({item}) {
-    let [toggle,setToggle] = useState('show')
 
     return (
         <div >

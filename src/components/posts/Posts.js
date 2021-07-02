@@ -1,5 +1,4 @@
 import './PostsStyle.css'
-import {useState} from "react";
 
 export default function Posts({item}) {
 
@@ -9,15 +8,6 @@ export default function Posts({item}) {
                 {item.userId} - {item.id} - {item.title}
             </p>
 
-            <button
-                onClick={() => {
-                    if (toggle === 'hide') {
-                        setToggle('show')
-                    } else if (toggle === 'show') {
-                        setToggle('hide')
-                    }console.log(toggle)
-                }}
-            >hide/show title</button>
         </div>
     )
 

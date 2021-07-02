@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Posts from "../posts/Posts";
 
 export default function User ({item}) {
     let [toggle,setToggle] = useState('show')
@@ -11,6 +12,8 @@ export default function User ({item}) {
                     setToggle(!toggle)
                 }}
             >hide/show title</button>
+
+            {toggle && <Posts item={item}/>}
 
         </div>
     );

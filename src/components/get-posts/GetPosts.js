@@ -12,10 +12,6 @@ export default function GetPosts() {
                 }
             );
     }, []);
-    //
-    // let arrayFilter =
-    //     posts.filter(value => (value.id) === value.id)
-
 
     return (
         <div>

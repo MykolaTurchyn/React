@@ -1,12 +1,15 @@
 import './PostsStyle.css'
+import {useState} from "react";
 
 export default function Posts({item}) {
 
     return (
         <div >
-            <p className={'show'}>
+            <p >
                 {item.userId} - {item.id} - {item.title}
             </p>
+
+
 
         </div>
     )

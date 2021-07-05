@@ -2,7 +2,7 @@ import {useState} from "react";
 import Posts from "../posts/Posts";
 
 export default function User ({item}) {
-    let [toggle,setToggle] = useState('show')
+    let [toggle,setToggle] = useState(false)
 
     return(
         <div>
@@ -11,7 +11,7 @@ export default function User ({item}) {
                 onClick={() => {
                     setToggle(!toggle)
                 }}
-            >hide/show title</button>
+            >Hide / Show</button>
 
             {toggle && <Posts item={item}/>}
 

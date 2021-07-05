@@ -1,6 +1,3 @@
-import './PostsStyle.css'
-import {useState} from "react";
-
 export default function Posts({item}) {
 
     return (

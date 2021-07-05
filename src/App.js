@@ -1,7 +1,10 @@
-export default function App () {
-    return(
-           <div>
+import Users from "./components/users/Users";
 
-           </div>
-          );
+export default function App() {
+
+    return (
+        <div>
+            <Users/>
+        </div>
+    );
 }

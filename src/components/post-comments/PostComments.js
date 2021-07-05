@@ -23,6 +23,7 @@ export default function PostComments(props) {
                             Email: {value.email}<br/>
                             Body: {value.body}<br/>
                         </b>
+                        <hr/>
                     </div>)
             }
         </div>

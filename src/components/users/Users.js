@@ -22,8 +22,9 @@ export default function Users() {
                     users.map(value => <User key={value.id} item={value}/>)
                 }
                 <Switch>
-                    <Route path={'/users/:id'} component={UserPosts}/>
                     <Route path={'/posts/:id/comments'} component={PostComments}/>
+                    <Route path={'/users/:id'} component={UserPosts}/>
+
                 </Switch>
             </div>
         </Router>

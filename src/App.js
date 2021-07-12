@@ -1,7 +1,13 @@
-export default function App () {
-    return(
-           <div>
+import {test} from "./services/API";
 
-           </div>
-          );
+export default function App() {
+    let id = 76341
+    test(id).then(value => console.log(value))
+
+
+    return (
+        <div>
+
+        </div>
+    );
 }

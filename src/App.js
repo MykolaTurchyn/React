@@ -1,13 +1,17 @@
-import {test} from "./services/API";
+import './App.css'
+import {BaseLayout} from "./layout/BaseLayout";
+import {Home} from "./pages/Home";
+
+
+
 
 export default function App() {
-    let id = 76341
-    test(id).then(value => console.log(value))
-
 
     return (
-        <div>
-
+        <div >
+            <BaseLayout>
+                <Home/>
+            </BaseLayout>
         </div>
     );
 }

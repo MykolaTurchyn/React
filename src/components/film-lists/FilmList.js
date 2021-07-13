@@ -1,13 +1,16 @@
 import FilmItem from "../film-item/FilmItem";
-import './FilmListStyle.css'
-export default function FilmList({items}) {
+
+export default function FilmList({movies}) {
     return (
         <div>
-                    {
-                        <div className={'FilmList'}>
-                            <FilmItem className={'film-list'} item={items} {...items} />
-                        </div>
-                    }
+            {
+                movies.map((value) =>
+                    <FilmItem key={value.id} movie={value}/>)
+            }
+            {/*{*/}
+            {/*//     genters.map((gender) =>*/}
+            {/*//         <FilmItem key={gender.id} genter={gender}/>)*/}
+            {/*// }*/}
 
         </div>
     );

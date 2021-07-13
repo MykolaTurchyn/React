@@ -1,27 +1,18 @@
 import {useEffect, useState} from "react";
-import {getGenres, getMovies} from "../services/API";
+import { getMovies} from "../services/API";
 import FilmList from "../components/film-lists/FilmList";
-import FilmItem from "../components/film-item/FilmItem";
 
 export default function Home() {
     const [movies, setMovies] = useState([]);
-    const [genters, setGenters] = useState([]);
 
     useEffect(() =>{ 
         getMovies().then(value => setMovies(value.data.results))
     },[])
-    useEffect(() => {
 
-        getGenres().then(value => setGenters(value.data.genres))
-    },[])
-    console.log(genters)
     return (
         <div>
             {
                 <FilmList movies={movies}/>
-            }
-            {
-                genters.map(value => <FilmItem genter={value}/>)
             }
         </div>
     );

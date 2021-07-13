@@ -7,11 +7,6 @@ export default function FilmList({movies}) {
                 movies.map((value) =>
                     <FilmItem key={value.id} movie={value}/>)
             }
-            {/*{*/}
-            {/*//     genters.map((gender) =>*/}
-            {/*//         <FilmItem key={gender.id} genter={gender}/>)*/}
-            {/*// }*/}
-
         </div>
     );
 }

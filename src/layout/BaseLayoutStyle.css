@@ -1,3 +1,6 @@
+.main {
+    background-color: antiquewhite;
+}
 .mainWrap {
     height: 100vh;
     display: flex;
@@ -23,7 +26,12 @@ footer {
 }
 .input {
     border-radius: 10px;
+    background-color: whitesmoke;
 }
 .header {
     text-align: right;
+}
+.btn {
+    background-color: white;
+    border-radius: 5px;
 }

@@ -3,7 +3,13 @@ import {useEffect, useState} from "react";
 import {getMoviesDetails} from "../../services/API";
 import {useDispatch} from "react-redux";
 import MovieDetails from "../movies-details/MovieDetails";
-
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 const imgBuild = (posterPath, size = 200) => `http://image.tmdb.org/t/p/w${size}${posterPath}`
 
 export default function FilmItem({movieItem, genreItem}) {
@@ -36,9 +42,9 @@ export default function FilmItem({movieItem, genreItem}) {
                 <h2>{movieItem.original_title}</h2>
 
 
-                <span>Rating: {movieItem.vote_average} (total votes : {movieItem.vote_count})</span>
-                <p>Overview: {movieItem.overview}</p>
-                <span>Release Data : {movieItem.release_date}</span>
+                <span><b>Rating:</b> {movieItem.vote_average} (total votes : {movieItem.vote_count})</span>
+                <p><b>Overview:</b> {movieItem.overview}</p>
+                <span><b>Release Data:</b> {movieItem.release_date}</span>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 .filmItem {
     border: 1px solid;
     border-radius: 8px;
+    background-color: rgba(234, 190, 177, 0.63);
 }
 .image {
     background-repeat: no-repeat;

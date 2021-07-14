@@ -6,9 +6,9 @@ export const BaseLayout = ({children}) => {
         <div className={'mainWrap'}>
             <header className={'header'}>
                 <input  className={'input'}  placeholder={'Search'} type="text"/>
-                <button>OK</button>
+                <button className={'btn'}>OK</button>
             </header>
-            <main>
+            <main className={'main'}>
                 <div className={'mainStyle'}>
                     {children}
                 </div>

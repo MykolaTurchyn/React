@@ -21,3 +21,9 @@ header {
 footer {
     background-color: blueviolet;
 }
+.input {
+    border-radius: 10px;
+}
+.header {
+    text-align: right;
+}

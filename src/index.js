@@ -25,6 +25,12 @@ const reducer = (state = initialState, action) => {
                     genres: action.payload
                 }
             }
+            case 'MOVIES-DETAILS' : {
+                return {
+                    ...state,
+                    moviesDetails: action.payload
+                }
+            }
         default :
             return state;
 

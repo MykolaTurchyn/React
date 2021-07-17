@@ -11,7 +11,7 @@ const axiosInstance = axios.create(url);
 
 const getMovies = () => axiosInstance('/discover/movie');
 const getGenres = () => axiosInstance('/genre/movie/list');
+const getGenresId = (id) => axiosInstance('/find/' + id);
 
-const getMoviesDetails = (movie_id) => axiosInstance('/movie/' + movie_id);
 
-export {getMovies, getMoviesDetails, getGenres}
+export {getMovies, getGenresId, getGenres}

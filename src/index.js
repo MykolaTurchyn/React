@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import {createStore} from "redux";
 
-
 let initialState = {
     movies: [],
 
@@ -19,18 +18,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 movies: action.payload
             }
-        }case 'GENRES' : {
-                return {
-                    ...state,
-                    genres: action.payload
-                }
-            }
-            case 'MOVIES-DETAILS' : {
-                return {
-                    ...state,
-                    moviesDetails: action.payload
-                }
-            }
+        }
         default :
             return state;
 

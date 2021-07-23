@@ -8,9 +8,7 @@ import {createStore} from "redux";
 
 let initialState = {
     movies: [],
-
 }
-
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'MOVIES': {
@@ -21,10 +19,8 @@ const reducer = (state = initialState, action) => {
         }
         default :
             return state;
-
     }
 }
-
 const store = createStore(reducer)
 ReactDOM.render(
     <React.StrictMode>

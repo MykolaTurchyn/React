@@ -5,7 +5,7 @@ export const BaseLayout = ({children}) => {
     return (
         <div className={'mainWrap'}>
             <header className={'header'}>
-                <input  className={'input'}  placeholder={'Search'} type="text"/>
+                <input className={'input'} placeholder={'Search'} type="text"/>
                 <button className={'btn'}>OK</button>
             </header>
             <main className={'main'}>

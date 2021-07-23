@@ -9,7 +9,6 @@ export default function MoviesComponent() {
     const [moviesList, setMoviesList] = useState([]);
     const dispatch = useDispatch()
 
-
     function getMovie() {
         getMovies().then(value => {
                 setMoviesList(value.data.results)
@@ -27,7 +26,6 @@ export default function MoviesComponent() {
         getMovie();
         getGenre();
     }, [])
-
     dispatch({
         type: 'MOVIES',
         payload: moviesList

@@ -3,27 +3,22 @@ import {useState} from "react";
 import Gener from "../genre/Gener";
 
 const imgBuild = (posterPath, size = 200) => `http://image.tmdb.org/t/p/w${size}${posterPath}`
-
 export default function FilmItem({movieItem, genreItem}) {
     const [toggele, setToggele] = useState(false);
-
-
     return (
         <div className={'filmItem'}>
             <div className={'image'}
                  style={{backgroundImage: `url(${imgBuild(movieItem.poster_path)})`}}>
             </div>
             <div>
-                <h3 style={{textAlign:'center'}}>{movieItem.original_title}</h3>
-                <Gener genreItem={genreItem} genreIds={movieItem.genre_ids}/>  <br/>
+                <h3 style={{textAlign: 'center'}}>{movieItem.original_title}</h3>
+                <Gener genreItem={genreItem} genreIds={movieItem.genre_ids}/> <br/>
 
                 <button onClick={() => {
                     setToggele(!toggele)
-                }} style={{display:"flex",justifySelf:'center'}}>More Info
+                }} style={{display: "flex", justifySelf: 'center'}}>More Info
                 </button>
                 <br/>
-
-
                 {
                     toggele &&
                     <div>
